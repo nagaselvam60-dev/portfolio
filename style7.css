@@ -1,0 +1,204 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f3f6; 
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 5%;
+    top: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.flipkart-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #f0f5ff;
+    margin: 0 20px;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+
+.flipkart-search input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.login, .cart, .seller {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+.login:hover, .cart:hover, .seller:hover {
+    background-color: #5b00ff;
+    color: white;
+}
+.login-btn {
+    background: #5b00ff;
+    color: white;         
+    width: 200px;
+    height: 40px;
+    margin-left: 70px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    align-items: center;
+    justify-items: center;
+}
+.header1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px 5%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header1 > div {
+    flex: 0 1 100px; 
+
+}
+
+.header1 img {
+    width: 64px; 
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 5px;
+    transition: transform 0.2s;
+}
+
+.header1 div:hover img {
+    transform: scale(1.3);
+}
+
+.header1 h4 {
+    font-size: 14px;
+
+}
+
+.slider {
+    position: relative;
+    width: 98%;
+    max-width: 1440px;
+    height: 250px; 
+    margin: 0 auto;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: slideAnim 16s infinite;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+.slide:nth-child(4) { animation-delay: 12s; }
+
+@keyframes slideAnim {
+    0%, 20% { opacity: 1; }
+    25%, 100% { opacity: 0; }
+}
+
+.main-contain{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contain1 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    padding-top: 15px;
+}
+
+.contain1 > div {
+    flex: 0 0 200px;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.contain1 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto 10px;
+}
+.detail {
+    background-color: rgb(185, 184, 184);
+    color: black;
+    padding: 20px;
+    border-radius: 4px;
+}
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 40px 5%;
+    gap: 30px;
+}
+
+footer span {
+    color: #878787;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer li {
+    list-style: none;
+    font-size: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 12px;
+    border-top: 1px solid #454d5e;
+}
